@@ -7,7 +7,7 @@ This is a fork of [SofianeHamlaou](https://github.com/SofianeHamlaoui/WD-Decrypt
 
 I do not claim to have written the code for unlocking the WD HDD itself as it has been done by experts already. I am merely using the github repo by Sofiane Hamlaou to make the process seamless and fast. This should work in all distros if all the dependencies are satisfied beforehand. For Debian/Ubuntu and arch-based distros you don't have to worry about dependencies as the script will prompt you to install if anything is missing.
 
-**For Debian/Ubuntu/Arch-based distros just place the script in your desired folder and execute it. It will do the rest**
+**For Debian/Ubuntu/Arch-based distros just run the script. It will do the rest**
 
 Having said that following programs are needed for this to work.
 
