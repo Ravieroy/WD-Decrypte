@@ -18,8 +18,6 @@ sudo dpkg -i fileName
 2. **python 2 or 3** : All the distros now have preinstalled python version 3 which you can check by `python3 --version` but for some reason the program looks for python and hence you might need python 2.7.x. When I checked the script in arch based linux Garuda Linux, it had `python --version` and hence you need not install python 2.7.x. 
 
 **TL;DR :So to just cut things short, if `python --version` shows your python version then you are good to go else you need to install python.**
-
-3. **Git** : You should have git installed but most probably you already have that. So just go ahead.
 ----
 
 When you plug your WD-HDD you would only see WD Unlocker in your files.
