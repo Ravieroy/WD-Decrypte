@@ -1,6 +1,6 @@
 ## Unlock Western Digital Hard Disk.
 
-This is a fork of [SofianeHamlaou] (https://github.com/SofianeHamlaoui/WD-Decrypte). I have merely written the script to automate the process for Debian/Arch based distros. You can find the original tutorial here https://youtu.be/Qz51UelzByA.
+This is a fork of [SofianeHamlaou](https://github.com/SofianeHamlaoui/WD-Decrypte). I have merely written the script to automate the process for Debian/Arch based distros. You can find the original tutorial here https://youtu.be/Qz51UelzByA.
  
  ----
 ### This is a script I wrote to make the unlocking of Western Digital Hard Disk easier. There are other ways like using wdpassport-utils to unlock it, but for some reason it didn't work for me always or may be I am too lazy. Either way, this script will help you to make the process less tiresome. 
