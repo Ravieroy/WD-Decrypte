@@ -23,33 +23,35 @@ sudo dpkg -i fileName
 
 When you plug your WD-HDD you would only see WD Unlocker in your files.
 
-![WD_unlocker](https://user-images.githubusercontent.com/81288438/120518555-53797180-c3ef-11eb-8517-835faa3b77f2.png)
+![WD_unlocker_pic1](https://user-images.githubusercontent.com/81288438/123912811-20e57900-d99b-11eb-83c9-e3d10dce1e3c.png)
+
 
 1. Clone this repository or just copy paste `git clone https://github.com/Ravieroy/WD-Decrypte` and head over to the folder which contains the script.  Make sure the script has execute permissons. If not use `chmod +x unlockHdd.sh` to make it executable.
 
 
-2. Run the script by `./unlockHdd.sh`. If it says ***permission denied*** then the script still doesn't have execute permissions. If it has (and all the dependencies are satisfied) this is what you should see. You would be prompted to clone the geekhaider's repository. 
+2. Run the script by `./unlockHdd.sh`. If it says ***permission denied*** then the script still doesn't have execute permissions. If it has (and all the dependencies are satisfied) this is what you should see. You would be prompted enter SCSI disk name.
 
-![Cloning](https://user-images.githubusercontent.com/81288438/120519473-4741e400-c3f0-11eb-84b6-e55d18353ae8.png)
-
-**Sometimes a operation not permitted error occurs as shown below but just keep doing as the script prompts and you will be good to go**
-
-![Step_1](https://user-images.githubusercontent.com/81288438/120518967-c4208e00-c3ef-11eb-8158-40bfe1d05ca0.png)
-
-4. Now most of the time the last line of the output should contain the mount name of your WD-HDD. This is in the [...] brackets, for example [sda], [sdb] etc. You need to enter your disk name **without the brackets**, like in my case it was **sda**. If you really want to be sure run the following command to see your HDD mentioned.
+Now most of the time the last line of the output should contain the mount name of your WD-HDD. This is in the [...] brackets, for example [sda], [sdb] etc. You need to enter your disk name **without the brackets**, like in my case it was **sda**. If you really want to be sure run the following command to see your HDD mentioned.
 
 ```bash
 dmesg | grep -i scsi
 ```
 
-![Step_2](https://user-images.githubusercontent.com/81288438/120520010-ee268000-c3f0-11eb-834b-500dd7dbe27f.png)
+![pic2](https://user-images.githubusercontent.com/81288438/123913053-673ad800-d99b-11eb-9988-8e314ed643cc.png)
+
+
+**Sometimes a operation not permitted error occurs as shown below but just keep doing as the script prompts and you will be good to go**
+
+![Step_1](https://user-images.githubusercontent.com/81288438/120518967-c4208e00-c3ef-11eb-8158-40bfe1d05ca0.png)
 
 
 4. Now you need to enter you WD password which you had setup while first running the hard disk in windows PC. The password won't be shown or stored anywhere. Just enter it. Provide your root password as well. If everything goes well **SCSI Status: Good** should be prompted.
 
-![Step_3](https://user-images.githubusercontent.com/81288438/120520134-11e9c600-c3f1-11eb-9e8a-22d9a60d4237.png)
+![pic3](https://user-images.githubusercontent.com/81288438/123913696-242d3480-d99c-11eb-92ab-aa23330074dc.png)
 
-![Step_4](https://user-images.githubusercontent.com/81288438/120520140-131af300-c3f1-11eb-80c5-6e9c063511a8.png)
+![pic4](https://user-images.githubusercontent.com/81288438/123913699-255e6180-d99c-11eb-89d0-d706cbd74283.png)
+
+![pic5](https://user-images.githubusercontent.com/81288438/123913703-25f6f800-d99c-11eb-86a6-5e08e456e7cf.png)
 
 
 Now you are done. Go ahead into your Files app and you should see your WD-HDD unlocked.
