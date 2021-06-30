@@ -39,6 +39,8 @@ dmesg | grep -i scsi
 
 ![pic2](https://user-images.githubusercontent.com/81288438/123913053-673ad800-d99b-11eb-9988-8e314ed643cc.png)
 
+![pic3](https://user-images.githubusercontent.com/81288438/123913696-242d3480-d99c-11eb-92ab-aa23330074dc.png)
+
 
 **Sometimes a operation not permitted error occurs as shown below but just keep doing as the script prompts and you will be good to go**
 
@@ -47,7 +49,7 @@ dmesg | grep -i scsi
 
 4. Now you need to enter you WD password which you had setup while first running the hard disk in windows PC. The password won't be shown or stored anywhere. Just enter it. Provide your root password as well. If everything goes well **SCSI Status: Good** should be prompted.
 
-![pic3](https://user-images.githubusercontent.com/81288438/123913696-242d3480-d99c-11eb-92ab-aa23330074dc.png)
+
 
 ![pic4](https://user-images.githubusercontent.com/81288438/123913699-255e6180-d99c-11eb-89d0-d706cbd74283.png)
 
