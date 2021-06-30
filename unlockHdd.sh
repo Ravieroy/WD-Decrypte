@@ -155,7 +155,7 @@ dmesg_check(){
 
 git_repo(){
   echo "${txtylw}cloning Git Repo ${txtrst}" | centerwide
-  git clone https://github.com/Ravieroy/WD-Decrypte.git
+  git clone https://github.com/Ravieroy/WD-Decrypte-Script.git
 }
 
 #For default confirmation Y/n
@@ -189,11 +189,11 @@ chk_bin_size(){
 check_dir(){
 
 dir_name=${PWD##*/} 
-if [ "$dir_name" != "WD-Decrypte"  ]; then
+if [ "$dir_name" != "WD-Decrypte-Script"  ]; then
   echo "${txtylw}Looks like you are running the script outside of the cloned directory${txtrst}" | centerwide
-  echo "${txtylw}Looking for cloned directory WD-Decrypte${txtrst}" | centerwide
+  echo "${txtylw}Looking for cloned directory WD-Decrypte-Script${txtrst}" | centerwide
 
-if [ ! -d "WD-Decrypte" ]; then
+if [ ! -d "WD-Decrypte-Script" ]; then
 echo -e "${txtylw}You would need to clone the whole repository. Do you want to clone it now?${txtrst} ? [Y/n] \c " 
 read input 
 default_confirm
@@ -210,7 +210,7 @@ default_confirm
     esac 
 else
 
-echo "${txtylw}Found WD-Decrypte. Proceeding Ahead${txtrst}" | centerwide
+echo "${txtylw}Found WD-Decrypte-Script. Proceeding Ahead${txtrst}" | centerwide
 sleep 2
 fi  
 fi
@@ -219,9 +219,9 @@ fi
 
 start_unlock(){
   dir_name=${PWD##*/} 
-  if [ "$dir_name" != "WD-Decrypte"  ]; then
+  if [ "$dir_name" != "WD-Decrypte-Script"  ]; then
     echo "${txtylw}Changing Directory${txtrst}" | centerwide
-    cd $PWD/WD-Decrypte
+    cd $PWD/WD-Decrypte-Script
     echo "${txtylw}Starting to decrypte${txtrst}" | centerwide
     sleep 2
   fi
