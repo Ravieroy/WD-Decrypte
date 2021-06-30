@@ -154,34 +154,6 @@ default_confirm(){
   fi
 }
 
-#To check directory exists or not
-
-check_dir(){
-
-DIR="$PWD/WD-Decrypte"
-if [ ! -d "$DIR" ]; then
-echo "${txtred}ERROR : ${DIR} does not exists.${txtrst}"
-echo -e "${txtylw}Did you only downloaded the script? You should clone the whole repository. Do you want to clone it now?${txtrst} ? [Y/n] \c "
-read input 
-default_confirm
-    case $input in
-            "Y" | "y" )
-            git_repo ;;
-            "N" | "n" )
-            echo "${txtred}can not proceed without it. Quitting${txtrst}"
-            exit 999 ;;
-
-            * )
-            echo "${txtred}Please make a correct choice.Thank You.${txtrst}"
-            exit 999 ;;
-    esac 
-else
-
-echo "${txtylw}Directory found. Proceeding ahead${txtrst}"
-sleep 2
-fi  
-}
-
 chk_input_disk(){
   if [ -z "$disk" ]; then
     echo "${txtred}WARNING: Cannot Proceed without disk name:${txtrst}"
@@ -206,8 +178,6 @@ chk_bin_size(){
 #Start unlocking
 
 start_unlock(){
-  echo "${txtylw}Changing Directory${txtrst}"
-  cd $PWD/WD-Decrypte
   chk_bin_size
   dmesg | grep -i scsi | grep -i attached
   echo -e "${txtgrn}Please enter the Attached SCSI disk name ${txtrst} \c"
@@ -227,6 +197,5 @@ check_dependencies
 install_dependencies
 
 dmesg_check
-check_dir
 clear
 start_unlock
