@@ -26,7 +26,7 @@ When you plug your WD-HDD you would only see WD Unlocker in your files.
 ![WD_unlocker_pic1](https://user-images.githubusercontent.com/81288438/123912811-20e57900-d99b-11eb-83c9-e3d10dce1e3c.png)
 
 
-1. Clone this repository or just copy paste `git clone https://github.com/Ravieroy/WD-Decrypte` and head over to the folder which contains the script.  Make sure the script has execute permissons. If not use `chmod +x unlockHdd.sh` to make it executable.
+1. Clone this repository or just copy paste `git clone https://github.com/Ravieroy/WD-Decrypte-Script` and head over to the folder which contains the script.  Make sure the script has execute permissons. If not use `chmod +x unlockHdd.sh` to make it executable.
 
 
 2. Run the script by `./unlockHdd.sh`. If it says ***permission denied*** then the script still doesn't have execute permissions. If it has (and all the dependencies are satisfied) this is what you should see. You would be prompted enter SCSI disk name.
